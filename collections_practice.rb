@@ -57,11 +57,12 @@ def add_s(array)
   array.each_with_index.collect do |element, index| 
    
     if element == "feet"
-      next 
+      "feet"
     else 
       element + "s"
   end
 end
+end 
 
 array = ["hand","feet", "knee", "table"]
 add_s(array)
