@@ -1,4 +1,3 @@
-require 'pry'
 def sort_array_asc(array)
    array.sort
 end
@@ -56,15 +55,13 @@ sum_array(array)
 
 def add_s(array)
   array.each_with_index.collect do |element, index| 
-    binding.pry
+   
     if element == "feet"
       next 
-    elsif 
+    else 
       element + "s"
-      
-    end
-   
+  end
 end
-end
+
 array = ["hand","feet", "knee", "table"]
 add_s(array)
